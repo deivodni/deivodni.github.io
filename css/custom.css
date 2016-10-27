@@ -14,6 +14,22 @@ body {
   position: relative;
 }
 
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: url(../images/1.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 /* Sticky footer and header styles
 -------------------------------------------------- */
 .footer {
@@ -91,7 +107,7 @@ body > .block-1 {
 
 /*BLOCKS*/
 .block-1 {
-	background-image: url(../images/1.jpg);
+	/*background-image: url(../images/1.jpg);*/
 	height: 100%;
 	width: 100%;
 	color: white;
